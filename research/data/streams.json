@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "F1",
+    "description": "Bare rejection missed by observation producer (original extractor boundary)",
+    "events": [
+      {
+        "id": "F1:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F1:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F1:3",
+        "seq": 3,
+        "kind": "source",
+        "data": {
+          "text": "not forty-two"
+        }
+      },
+      {
+        "id": "F1:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F1-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F2",
+    "description": "Recognized ambiguity, generic acknowledgment and attempted reapproval",
+    "events": [
+      {
+        "id": "F2:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F2:2",
+        "seq": 2,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "F2:3",
+        "seq": 3,
+        "kind": "acknowledgment",
+        "data": {
+          "issue": "a"
+        }
+      },
+      {
+        "id": "F2:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F2:5",
+        "seq": 5,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F2-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F3",
+    "description": "Wrong address proposal after a time correction; no dispute signal",
+    "events": [
+      {
+        "id": "F3:1",
+        "seq": 1,
+        "kind": "source",
+        "data": {
+          "text": "Water at house 10. Monday, sorry Tuesday, house 20."
+        }
+      },
+      {
+        "id": "F3:2",
+        "seq": 2,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 20",
+            "time_reference": "Tuesday"
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F3:3",
+        "seq": 3,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "f9cd14b81c06e500ee6d75438ee0d53cbdb322ffa4e61ef68c18be6e1ec830e1",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F3:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F3-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F4",
+    "description": "Semantically lossy but syntactically valid proposal",
+    "events": [
+      {
+        "id": "F4:1",
+        "seq": 1,
+        "kind": "source",
+        "data": {
+          "text": "Water at house 24/7"
+        }
+      },
+      {
+        "id": "F4:2",
+        "seq": 2,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F4:3",
+        "seq": 3,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F4:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F4-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F5",
+    "description": "Semantically lossy but syntactically valid proposal",
+    "events": [
+      {
+        "id": "F5:1",
+        "seq": 1,
+        "kind": "source",
+        "data": {
+          "text": "Water at house twenty zero"
+        }
+      },
+      {
+        "id": "F5:2",
+        "seq": 2,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 20",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F5:3",
+        "seq": 3,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "0dc3407b22c844227002ae396b45f08e58af4f5ac9e79ac932066fe691acd98e",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F5:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F5-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F6",
+    "description": "Shared-address scope unresolved; only second issue receives address",
+    "events": [
+      {
+        "id": "F6:1",
+        "seq": 1,
+        "kind": "source",
+        "data": {
+          "text": "Water and drainage at house 24"
+        }
+      },
+      {
+        "id": "F6:2",
+        "seq": 2,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F6:3",
+        "seq": 3,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "category": "drainage",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F6:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "af042b6813c6b0fb18e28d85de2da8c07809cc76088c642c9b1e751cfece5cc6",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F6:5",
+        "seq": 5,
+        "kind": "approval",
+        "data": {
+          "issue": "b",
+          "version": 1,
+          "digest": "4ae505f5ab4637e67a3410389a4eb7693931264d4904f5f9df5491cecf55ed41",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F6:6",
+        "seq": 6,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F6-a"
+        }
+      },
+      {
+        "id": "F6:7",
+        "seq": 7,
+        "kind": "commit",
+        "data": {
+          "issue": "b",
+          "operation": "F6-b"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F7",
+    "description": "Unmarked new-versus-correction ambiguity with an approved old issue",
+    "events": [
+      {
+        "id": "F7:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F7:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F7:3",
+        "seq": 3,
+        "kind": "source",
+        "data": {
+          "text": "Water at house 26"
+        }
+      },
+      {
+        "id": "F7:4",
+        "seq": 4,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F7:5",
+        "seq": 5,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F7-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F8",
+    "description": "Repair signal persists through unrelated time edit",
+    "events": [
+      {
+        "id": "F8:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F8:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F8:3",
+        "seq": 3,
+        "kind": "source",
+        "data": {
+          "text": "Actually house ippatnaalku on Monday"
+        }
+      },
+      {
+        "id": "F8:4",
+        "seq": 4,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "F8:5",
+        "seq": 5,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "time_reference": "Monday"
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F8:6",
+        "seq": 6,
+        "kind": "acknowledgment",
+        "data": {
+          "issue": "a"
+        }
+      },
+      {
+        "id": "F8:7",
+        "seq": 7,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "f6596ac16da4463e30a8ec6483bcce0d453369017daa71e5f34b1e96828eaac2",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F8:8",
+        "seq": 8,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "F8-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "F9",
+    "description": "Negated category produces phantom incomplete issue",
+    "events": [
+      {
+        "id": "F9:1",
+        "seq": 1,
+        "kind": "source",
+        "data": {
+          "text": "There is no water problem. Garbage at house 24."
+        }
+      },
+      {
+        "id": "F9:2",
+        "seq": 2,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F9:3",
+        "seq": 3,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "category": "garbage",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "F9:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "b",
+          "version": 1,
+          "digest": "67261d410b4efe1297a9aa0243589df97f309e8d69e80bd1268cbcde58be97d1",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "F9:5",
+        "seq": 5,
+        "kind": "commit",
+        "data": {
+          "issue": "b",
+          "operation": "F9-b"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N01",
+    "description": "No correction, one legitimate approved commit",
+    "events": [
+      {
+        "id": "N01:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N01:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N01:3",
+        "seq": 3,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N01-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N02",
+    "description": "Explicitly new second complaint of same service",
+    "events": [
+      {
+        "id": "N02:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N02:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N02:3",
+        "seq": 3,
+        "kind": "source",
+        "data": {
+          "text": "Another separate water complaint at house 26"
+        }
+      },
+      {
+        "id": "N02:4",
+        "seq": 4,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N02:5",
+        "seq": 5,
+        "kind": "approval",
+        "data": {
+          "issue": "b",
+          "version": 1,
+          "digest": "b8e93d33ef105e34b2926933ccffa8d0b53201c4daeef0ece7e6b6bb4f3d846b",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N02:6",
+        "seq": 6,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N02-a"
+        }
+      },
+      {
+        "id": "N02:7",
+        "seq": 7,
+        "kind": "commit",
+        "data": {
+          "issue": "b",
+          "operation": "N02-b"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N03",
+    "description": "Recognized change revokes approval; legitimate reapproval",
+    "events": [
+      {
+        "id": "N03:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N03:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N03:3",
+        "seq": 3,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N03:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N03-a"
+        }
+      },
+      {
+        "id": "N03:5",
+        "seq": 5,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N03:6",
+        "seq": 6,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N03-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N04",
+    "description": "Explicitly resolved ambiguity permits fresh approval",
+    "events": [
+      {
+        "id": "N04:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N04:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N04:3",
+        "seq": 3,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N04:4",
+        "seq": 4,
+        "kind": "clarification",
+        "data": {
+          "issue": "a",
+          "resolves": [
+            "N04:3"
+          ],
+          "values": {
+            "location": "House 24"
+          },
+          "evidence": "explicit-scripted-resolution"
+        }
+      },
+      {
+        "id": "N04:5",
+        "seq": 5,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N04:6",
+        "seq": 6,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N04-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N05",
+    "description": "Acknowledgment and unrelated edits must not erase repair",
+    "events": [
+      {
+        "id": "N05:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N05:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N05:3",
+        "seq": 3,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N05:4",
+        "seq": 4,
+        "kind": "acknowledgment",
+        "data": {
+          "issue": "a"
+        }
+      },
+      {
+        "id": "N05:5",
+        "seq": 5,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "time_reference": "Monday"
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N05:6",
+        "seq": 6,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "f6596ac16da4463e30a8ec6483bcce0d453369017daa71e5f34b1e96828eaac2",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N05:7",
+        "seq": 7,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N05-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N06",
+    "description": "Scoped correction does not invalidate another issue",
+    "events": [
+      {
+        "id": "N06:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N06:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N06:3",
+        "seq": 3,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N06:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "b",
+          "version": 1,
+          "digest": "3f9b9dc4662979103884dda40949963934a7e1df9a14f9350fc5b83fa790693c",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N06:5",
+        "seq": 5,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N06:6",
+        "seq": 6,
+        "kind": "commit",
+        "data": {
+          "issue": "b",
+          "operation": "N06-b"
+        }
+      },
+      {
+        "id": "N06:7",
+        "seq": 7,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N06-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N07",
+    "description": "Restart before commit preserves valid approval",
+    "events": [
+      {
+        "id": "N07:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N07:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N07:3",
+        "seq": 3,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N07-a"
+        }
+      }
+    ],
+    "faults": {
+      "3": "restart"
+    }
+  },
+  {
+    "id": "N08",
+    "description": "Crash after sink transaction before response and same-ID retry",
+    "events": [
+      {
+        "id": "N08:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N08:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N08:3",
+        "seq": 3,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N08-a"
+        }
+      }
+    ],
+    "faults": {
+      "3": "after_commit"
+    }
+  },
+  {
+    "id": "N09",
+    "description": "Different event IDs, same operation ID deduplicate effect",
+    "events": [
+      {
+        "id": "N09:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N09:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N09:3",
+        "seq": 3,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N09-a"
+        }
+      },
+      {
+        "id": "N09:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N09-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N10",
+    "description": "Revoked approval cannot commit",
+    "events": [
+      {
+        "id": "N10:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N10:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N10:3",
+        "seq": 3,
+        "kind": "revocation",
+        "data": {
+          "issue": "a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N10:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N10-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N11",
+    "description": "Stale digest/version approval after changed address",
+    "events": [
+      {
+        "id": "N11:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N11:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N11:3",
+        "seq": 3,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N11:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N11:5",
+        "seq": 5,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N11-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N12",
+    "description": "Two concurrent field repairs require two explicit resolutions",
+    "events": [
+      {
+        "id": "N12:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N12:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N12:3",
+        "seq": 3,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N12:4",
+        "seq": 4,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "time_reference",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N12:5",
+        "seq": 5,
+        "kind": "clarification",
+        "data": {
+          "issue": "a",
+          "resolves": [
+            "N12:3"
+          ],
+          "values": {
+            "location": "House 24"
+          },
+          "evidence": "explicit-scripted-resolution"
+        }
+      },
+      {
+        "id": "N12:6",
+        "seq": 6,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N12:7",
+        "seq": 7,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N12-a"
+        }
+      },
+      {
+        "id": "N12:8",
+        "seq": 8,
+        "kind": "clarification",
+        "data": {
+          "issue": "a",
+          "resolves": [
+            "N12:4"
+          ],
+          "values": {
+            "time_reference": "Monday"
+          },
+          "evidence": "explicit-scripted-resolution"
+        }
+      },
+      {
+        "id": "N12:9",
+        "seq": 9,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 3,
+          "digest": "6ce40ffc86eeed515a0a9276afe1abea288616fb0fb17b8f0c37f17949d5245b",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N12:10",
+        "seq": 10,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N12-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N13",
+    "description": "Same-field overlapping repairs: resolving one leaves another",
+    "events": [
+      {
+        "id": "N13:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N13:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N13:3",
+        "seq": 3,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N13:4",
+        "seq": 4,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N13:5",
+        "seq": 5,
+        "kind": "clarification",
+        "data": {
+          "issue": "a",
+          "resolves": [
+            "N13:3"
+          ],
+          "values": {
+            "location": "House 24"
+          },
+          "evidence": "explicit-scripted-resolution"
+        }
+      },
+      {
+        "id": "N13:6",
+        "seq": 6,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N13:7",
+        "seq": 7,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N13-a"
+        }
+      },
+      {
+        "id": "N13:8",
+        "seq": 8,
+        "kind": "clarification",
+        "data": {
+          "issue": "a",
+          "resolves": [
+            "N13:4"
+          ],
+          "values": {
+            "location": "House 24"
+          },
+          "evidence": "explicit-scripted-resolution"
+        }
+      },
+      {
+        "id": "N13:9",
+        "seq": 9,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N13:10",
+        "seq": 10,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N13-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N14",
+    "description": "Unsupported raw identifier rejected by validation",
+    "events": [
+      {
+        "id": "N14:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24/7",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N14:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 0,
+          "digest": "af042b6813c6b0fb18e28d85de2da8c07809cc76088c642c9b1e751cfece5cc6",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N14:3",
+        "seq": 3,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N14-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N15",
+    "description": "Recognized F1 rejection blocks both policies",
+    "events": [
+      {
+        "id": "N15:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N15:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N15:3",
+        "seq": 3,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N15:4",
+        "seq": 4,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N15-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N16",
+    "description": "Crash before durable transaction, restart and retry",
+    "events": [
+      {
+        "id": "N16:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N16:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N16:3",
+        "seq": 3,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N16-a"
+        }
+      }
+    ],
+    "faults": {
+      "3": "before_commit"
+    }
+  },
+  {
+    "id": "N17",
+    "description": "Ambiguous candidate scope resolved to one of two issues",
+    "events": [
+      {
+        "id": "N17:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N17:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N17:3",
+        "seq": 3,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N17:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "b",
+          "version": 1,
+          "digest": "7bafdccdf82cf82bee8973e69149fc4504acb7fe60b665cdfbb7b2c0d04b5a4b",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N17:5",
+        "seq": 5,
+        "kind": "correction",
+        "data": {
+          "scopes": [
+            "a",
+            "b"
+          ],
+          "field": "location",
+          "evidence": "scripted-repair"
+        }
+      },
+      {
+        "id": "N17:6",
+        "seq": 6,
+        "kind": "clarification",
+        "data": {
+          "issue": "a",
+          "resolves": [
+            "N17:5"
+          ],
+          "values": {
+            "location": "House 24"
+          },
+          "evidence": "explicit-scripted-resolution"
+        }
+      },
+      {
+        "id": "N17:7",
+        "seq": 7,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 2,
+          "digest": "63d60d3dcd5310b62077cb66f2143bf69a141f2421a25da2271d51b70ce21597",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N17:8",
+        "seq": 8,
+        "kind": "approval",
+        "data": {
+          "issue": "b",
+          "version": 1,
+          "digest": "7bafdccdf82cf82bee8973e69149fc4504acb7fe60b665cdfbb7b2c0d04b5a4b",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N17:9",
+        "seq": 9,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N17-a"
+        }
+      },
+      {
+        "id": "N17:10",
+        "seq": 10,
+        "kind": "commit",
+        "data": {
+          "issue": "b",
+          "operation": "N17-b"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N18",
+    "description": "Explicit dispute and missing location remain blocked",
+    "events": [
+      {
+        "id": "N18:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N18:2",
+        "seq": 2,
+        "kind": "dispute",
+        "data": {
+          "scopes": [
+            "a"
+          ],
+          "field": "location",
+          "evidence": "ambiguous-input"
+        }
+      },
+      {
+        "id": "N18:3",
+        "seq": 3,
+        "kind": "acknowledgment",
+        "data": {
+          "issue": "a"
+        }
+      },
+      {
+        "id": "N18:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "af042b6813c6b0fb18e28d85de2da8c07809cc76088c642c9b1e751cfece5cc6",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N18:5",
+        "seq": 5,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N18-a"
+        }
+      }
+    ],
+    "faults": {}
+  },
+  {
+    "id": "N19",
+    "description": "Incorrect proposal target undetectable from declared scope alone",
+    "events": [
+      {
+        "id": "N19:1",
+        "seq": 1,
+        "kind": "proposal",
+        "data": {
+          "issue": "a",
+          "values": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N19:2",
+        "seq": 2,
+        "kind": "approval",
+        "data": {
+          "issue": "a",
+          "version": 1,
+          "digest": "372dc1a0611997b8ebd05444646aea93b2035333b08ae2cbc227835d1194854a",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N19:3",
+        "seq": 3,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N19:4",
+        "seq": 4,
+        "kind": "approval",
+        "data": {
+          "issue": "b",
+          "version": 1,
+          "digest": "3f9b9dc4662979103884dda40949963934a7e1df9a14f9350fc5b83fa790693c",
+          "actor": "reviewer"
+        }
+      },
+      {
+        "id": "N19:5",
+        "seq": 5,
+        "kind": "source",
+        "data": {
+          "text": "Correct water to house 24"
+        }
+      },
+      {
+        "id": "N19:6",
+        "seq": 6,
+        "kind": "proposal",
+        "data": {
+          "issue": "b",
+          "values": {
+            "location": "House 24"
+          },
+          "evidence": "scripted-source"
+        }
+      },
+      {
+        "id": "N19:7",
+        "seq": 7,
+        "kind": "commit",
+        "data": {
+          "issue": "a",
+          "operation": "N19-a"
+        }
+      }
+    ],
+    "faults": {}
+  }
+]

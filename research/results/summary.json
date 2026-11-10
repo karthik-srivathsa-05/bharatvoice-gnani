@@ -1,0 +1,48 @@
+{
+  "case_count": 28,
+  "identical": 28,
+  "totals": {
+    "B3": {
+      "protocol_state_mismatches": 0,
+      "protocol_invalid_effects": 0,
+      "stale_exposed_boundaries": 9,
+      "stale_at_risk_boundaries": 50,
+      "stale_exposed_episodes": 4,
+      "stale_episodes": 15,
+      "wrong_target_edits": 3,
+      "accepted_edits": 76,
+      "semantic_invalid_commit_opportunities": 7,
+      "commit_attempts": 36,
+      "invalid_sink_effects": 7,
+      "sink_effects": 22,
+      "unnecessary_blocked_boundaries": 0,
+      "allowed_issue_boundaries": 63,
+      "clarification_hold_boundaries": 41,
+      "unnecessary_hold_boundaries": 0,
+      "clarification_obligations_opened": 13,
+      "duplicate_sink_effects": 0,
+      "safe_completion": 20
+    },
+    "M": {
+      "protocol_state_mismatches": 0,
+      "protocol_invalid_effects": 0,
+      "stale_exposed_boundaries": 9,
+      "stale_at_risk_boundaries": 50,
+      "stale_exposed_episodes": 4,
+      "stale_episodes": 15,
+      "wrong_target_edits": 3,
+      "accepted_edits": 76,
+      "semantic_invalid_commit_opportunities": 7,
+      "commit_attempts": 36,
+      "invalid_sink_effects": 7,
+      "sink_effects": 22,
+      "unnecessary_blocked_boundaries": 0,
+      "allowed_issue_boundaries": 63,
+      "clarification_hold_boundaries": 41,
+      "unnecessary_hold_boundaries": 0,
+      "clarification_obligations_opened": 13,
+      "duplicate_sink_effects": 0,
+      "safe_completion": 20
+    }
+  }
+}

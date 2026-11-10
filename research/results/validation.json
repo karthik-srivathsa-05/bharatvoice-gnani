@@ -1,0 +1,18 @@
+{
+  "date_ist": "2026-11-11",
+  "python": "3.12.14",
+  "command": "PYTHONDONTWRITEBYTECODE=1 work/gnani-live/venv/bin/python -m pytest -q research/tests tests -p no:cacheprovider",
+  "passed": 131,
+  "pilot_tests": 51,
+  "existing_tests": 80,
+  "warnings": 1,
+  "warning": "Existing Starlette/httpx deprecation warning",
+  "cases": 28,
+  "logical_boundaries_per_policy": 153,
+  "paired_behavior_identical": 28,
+  "fixture_regeneration_byte_identical": true,
+  "replay_byte_identical": true,
+  "gnani_calls": 0,
+  "real_complaint_writes": 0,
+  "scope": "Authored event diagnostics, not population inference or formal model checking"
+}

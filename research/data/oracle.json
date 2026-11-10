@@ -1,0 +1,3544 @@
+{
+  "F1": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "F2": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "F3": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {},
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Tuesday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Tuesday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Tuesday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": "Tuesday"
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "F4": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {},
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24/7",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24/7",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24/7",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24/7",
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "F5": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {},
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "F6": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {},
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "b.category",
+          "b.location",
+          "b.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": null
+      },
+      "b": {
+        "category": "drainage",
+        "location": null,
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a",
+      "b"
+    ]
+  },
+  "F7": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "b.category",
+          "b.location",
+          "b.time_reference"
+        ],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      },
+      "b": {
+        "category": "water",
+        "location": "House 26",
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a",
+      "b"
+    ]
+  },
+  "F8": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 8,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": "Monday"
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "F9": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {},
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "b": {
+            "category": "garbage",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "b": {
+            "category": "garbage",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "b.category",
+          "b.location",
+          "b.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "b": {
+            "category": "garbage",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "b": {
+            "category": "garbage",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "b"
+    ],
+    "final_fields": {
+      "b": {
+        "category": "garbage",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N01": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N02": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "b.category",
+          "b.location",
+          "b.time_reference"
+        ],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 26",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a",
+      "b"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      },
+      "b": {
+        "category": "water",
+        "location": "House 26",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N03": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N04": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.location"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N05": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": "Monday"
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "N06": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "b.category",
+          "b.location",
+          "b.time_reference"
+        ],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "b"
+        ],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "b"
+        ],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "b"
+        ],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "b"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "b"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": null
+      },
+      "b": {
+        "category": "drainage",
+        "location": "House 30",
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "N07": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N08": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N09": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N10": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N11": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N12": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.location"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 8,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 9,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 10,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": "Monday"
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": "Monday"
+      }
+    },
+    "clarification_required": []
+  },
+  "N13": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.location"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 8,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.location"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 9,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 10,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N14": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24/7",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24/7",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24/7",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24/7",
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "N15": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "N16": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N17": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "b.category",
+          "b.location",
+          "b.time_reference"
+        ],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a",
+          "b"
+        ],
+        "invalidated_approval_issues": [
+          "a",
+          "b"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "a",
+          "b"
+        ],
+        "permitted_edit_targets": [
+          "a.location"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [
+          "b"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 8,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 9,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 10,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "water",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "expected_effects": [
+      "a",
+      "b"
+    ],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      },
+      "b": {
+        "category": "water",
+        "location": "House 30",
+        "time_reference": null
+      }
+    },
+    "clarification_required": []
+  },
+  "N18": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": null,
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": []
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": null,
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  },
+  "N19": {
+    "frames": [
+      {
+        "seq": 1,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "a.category",
+          "a.location",
+          "a.time_reference"
+        ],
+        "protocol_can_commit": []
+      },
+      {
+        "seq": 2,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 3,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [
+          "b.category",
+          "b.location",
+          "b.time_reference"
+        ],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 4,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 42",
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [
+          "a",
+          "b"
+        ],
+        "requires_clarification": [],
+        "invalidated_approval_issues": [],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 5,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "seq": 6,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [
+          "a.location"
+        ],
+        "protocol_can_commit": [
+          "a"
+        ]
+      },
+      {
+        "seq": 7,
+        "fields": {
+          "a": {
+            "category": "water",
+            "location": "House 24",
+            "time_reference": null
+          },
+          "b": {
+            "category": "drainage",
+            "location": "House 30",
+            "time_reference": null
+          }
+        },
+        "can_commit": [],
+        "requires_clarification": [
+          "a"
+        ],
+        "invalidated_approval_issues": [
+          "a"
+        ],
+        "permitted_edit_targets": [],
+        "protocol_can_commit": [
+          "a"
+        ]
+      }
+    ],
+    "expected_effects": [],
+    "final_fields": {
+      "a": {
+        "category": "water",
+        "location": "House 24",
+        "time_reference": null
+      },
+      "b": {
+        "category": "drainage",
+        "location": "House 30",
+        "time_reference": null
+      }
+    },
+    "clarification_required": [
+      "a"
+    ]
+  }
+}
