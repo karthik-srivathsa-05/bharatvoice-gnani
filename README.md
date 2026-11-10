@@ -33,7 +33,7 @@ Use localhost for microphone permissions (or HTTPS in a future approved hosting 
 
 See `DEMO_STORYBOARD.md` for the timed 60-second script and live-recording alternative.
 
-## Gnani integration: documented, live execution pending
+## Gnani integration: documented and live regression verified
 
 Documentation read on **2026-11-10**: <https://docs.gnani.ai/api/STT/speech-to-text> (also available as `.md`). A short contract reference is in `docs/GNANI_CONTRACT.md`.
 
@@ -46,7 +46,7 @@ The application sends multipart **POST https://api.vachana.ai/stt/v3** with:
 
 Romanized output serves the bounded offline parser; it is not a claim that transliteration preserves all dialects or corrections. Actual successful responses are labeled `ACTUAL GNANI API OUTPUT` and persist request ID/model with the original transcript. `detected_language_code` is not expected for `transliterate`. There is no confidence score. The adapter rejects malformed, truncated or unexpected-model responses; handles empty speech; bounds connection time to 5 seconds and request I/O to 25 seconds; and reports upstream authentication, rate-limit and service errors without exposing keys or response bodies. No automatic retries or hidden fallback are performed. Save conflicts return HTTP 409 rather than overwriting another turn.
 
-**No credentials were available, and no live Gnani call was made.** HTTP contract/error tests use synthetic mocked responses and are explicitly named accordingly. Live Prisma usage is implemented in the upload/recording path, but the challenge requirement for a demonstrated genuine live call remains unverified until you configure a key and test authorized audio. `/api/health.live_verified` records this build's verification status, not credential validity.
+**A genuine Prisma v3.0 request with offline synthetic speech returned HTTP 200.** The actual transcript and extraction result are recorded in `docs/LIVE_NORMALIZATION_VALIDATION.md`. HTTP contract/error tests still use synthetic mocked responses and are explicitly named accordingly. This one live English clip does not establish multilingual reliability. `/api/health.live_verified` is a static build flag, not a dynamic credential or validation check; consult the dated validation evidence for the live result.
 
 ## Extraction and integrity boundaries
 
@@ -124,3 +124,46 @@ It checks two issues, missing-field confirmation blocking, one-issue clarificati
 4. Demonstrate the five scenarios and persistence using the storyboard; include the honest integration status in the challenge submission.
 
 Nothing has been deployed or published. Deployment requires your approval.
+
+## English house-number normalization and live regression
+
+The extractor now normalizes explicit English house addresses for extraction only:
+`house twenty four`, `house number twenty-four`, `house no 24`, `house no. 24`,
+and `house number 24` become `house 24`. Supported spoken numbers are zero–99
+and unit-led hundreds through 999, including `two hundred and forty-two`.
+Digit addresses remain supported. Normalization is deliberately scoped to house
+addresses; time expressions and bare numbers are not globally rewritten.
+Unsupported number continuations such as `house twenty four thousand` are
+marked unsupported rather than partially accepted as House 24.
+
+Stored turn `text`, issue `original_text`, and revision `evidence` retain the
+original transcript. Turn `extraction_text` provides the normalized representation;
+revision evidence links changes to the original issue fragment. Exact character
+span mappings are not currently stored. Existing saved turns without
+`extraction_text` remain readable.
+
+Within an issue, ordered address mentions separated by correction language can
+replace earlier values across sentence boundaries. Revisions retain both values,
+including House 42 → House 24 for the captured Prisma regression. Multiple
+addresses without a correction between them, or alternatives joined by “or”,
+require clarification. A time correction does not authorize multiple address
+candidates. Corrections with multiple possible issues require an explicit target;
+named service categories constrain scope. Bare `not forty-two` is retained as
+source evidence but does not by itself infer a new house address. Repeat the
+explicit house address or use manual field review for unsupported corrections.
+
+A complete, unconfirmed issue is now reported as `awaiting_confirmation`.
+Missing or ambiguous fields remain `incomplete`. Transcription and extraction
+never confirm a record; confirmation still requires the explicit review action.
+
+Limitations: this is a bounded deterministic English grammar, not general number
+understanding. Kannada number words, Kannada-English mixed number expressions,
+digit-by-digit speech, fractions, ranges, alphanumeric house identifiers and
+numbers above spoken 999 require review/manual entry. Existing Kannada service
+words and correction markers remain supported; this change does not establish
+Kannada address-number support. No dispatch or authority submission occurs.
+
+The exact captured Prisma transcript is an extraction regression, separate from
+synthetic grammar tests. Five existing hand-authored evaluation scenarios remain
+a small known set, not evidence of general multilingual accuracy. See
+`docs/LIVE_NORMALIZATION_VALIDATION.md` for measured results from this fix.

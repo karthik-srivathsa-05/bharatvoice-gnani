@@ -3,6 +3,7 @@ import re
 from typing import Literal
 from uuid import uuid4
 from pydantic import BaseModel, ConfigDict, Field
+from .normalization import normalize
 
 class Strict(BaseModel):
     model_config = ConfigDict(extra='forbid', strict=True, validate_assignment=True)
@@ -27,7 +28,7 @@ class Issue(Strict):
     def missing(self):
         return (['category'] if self.category == 'unknown' else []) + ([] if self.location else ['location']) + (['clarification'] if self.blocked else [])
     def view(self):
-        return {**self.model_dump(), 'missing_fields': self.missing, 'status': 'incomplete' if self.missing else ('confirmed' if self.confirmed else 'draft')}
+        return {**self.model_dump(), 'missing_fields': self.missing, 'status': 'incomplete' if self.missing else ('confirmed' if self.confirmed else 'awaiting_confirmation')}
 
 class Session(Strict):
     id: str = Field(default_factory=lambda: str(uuid4()))
@@ -56,26 +57,35 @@ def values(text, pattern):
     return result
 
 def apply_fields(issue, text):
+    evidence = text
+    text = normalize(text)
     changed = False
     for field, pattern in [('location', LOCATION), ('time_reference', TIME)]:
         hits = values(text, pattern)
         current = getattr(issue, field)
         positives=[v for v,neg in hits if not neg]
-        if len(set(positives))>1 and not CORRECTION.search(text):
+        spans=list(pattern.finditer(text))
+        # A correction marker must occur between this field's candidates.
+        # A correction to time cannot authorize an unrelated address change.
+        if len(set(positives))>1 and (
+            not CORRECTION.search(text[spans[0].end():spans[-1].start()])
+            or re.search(r'\bor\b',text[spans[0].end():spans[-1].start()],re.I)
+        ):
             issue.blocked=True;issue.confirmed=False
+            continue
         # Negation of a previously accepted value explicitly removes it.
         for value, neg in hits:
             if neg:
                 if current != value:
-                    issue.revisions.append(Revision(field=field,before=value,after=None,evidence=text))
+                    issue.revisions.append(Revision(field=field,before=value,after=None,evidence=evidence))
                 if current == value:
-                    issue.revisions.append(Revision(field=field,before=current,after=None,evidence=text)); current=None; changed=True
+                    issue.revisions.append(Revision(field=field,before=current,after=None,evidence=evidence)); current=None; changed=True
                 continue
             if current != value:
-                issue.revisions.append(Revision(field=field,before=current,after=value,evidence=text)); current=value; changed=True
+                issue.revisions.append(Revision(field=field,before=current,after=value,evidence=evidence)); current=value; changed=True
         if field == 'location' and re.search(r'the location is\s*(?:\.{3}|…)?\s*$',text,re.I):
             if current is not None:
-                issue.revisions.append(Revision(field=field,before=current,after=None,evidence=text))
+                issue.revisions.append(Revision(field=field,before=current,after=None,evidence=evidence))
             current = None; changed=True
         setattr(issue,field,current)
     if CORRECTION.search(text) and not changed and re.search(r'\b(?:actually|sorry|alla|badalu)\b|ಅಲ್ಲ',text,re.I):
@@ -87,7 +97,7 @@ def apply_fields(issue, text):
 
 def process(session: Session, text: str, source='typed', target_id=None):
     session.prompts=[]
-    session.turns.append({'text':text,'source':source})
+    session.turns.append({'text':text,'source':source,'extraction_text':normalize(text)})
     mentions=list(CATEGORY.finditer(text))
     selected=next((i for i in session.issues if i.id==target_id),None)
     if selected and any(m.lastgroup!=selected.category for m in mentions):
@@ -117,7 +127,7 @@ def process(session: Session, text: str, source='typed', target_id=None):
     else:
         target=next((i for i in session.issues if i.id==target_id),None)
         if target is None and len(session.issues)==1: target=session.issues[0]
-        if target is None and not session.issues and LOCATION.search(text):
+        if target is None and not session.issues and LOCATION.search(normalize(text)):
             target=Issue(category='unknown',original_text=text);session.issues.append(target)
         if target: apply_fields(target,text)
         else:

@@ -104,3 +104,12 @@ def test_manual_review_arbitrary_location(client):
     assert s['issues'][0]['location']=='24, 5th Cross, Indiranagar, Bengaluru'
     assert s['issues'][0]['revisions'][-1]['evidence']=='Explicit citizen field review'
     assert review(client,s).json()['issues'][0]['confirmed']
+
+def test_spoken_house_correction_requires_explicit_confirmation(client):
+    transcript='There is no water at house number forty-two. Sorry. Not forty-two, house number twenty-four. The problem started on Monday.'
+    s=turn(client,new(client),transcript)
+    i=s['issues'][0]
+    assert i['location']=='House 24' and i['status']=='awaiting_confirmation'
+    assert not i['confirmed'] and s['turns'][0]['text']==transcript
+    assert any(r['before']=='House 42' and r['after']=='House 24' for r in i['revisions'])
+    assert review(client,s).json()['issues'][0]['status']=='confirmed'
