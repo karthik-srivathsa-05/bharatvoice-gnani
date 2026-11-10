@@ -1,0 +1,7 @@
+[
+ {"id":"S1","synthetic":true,"name":"Two services","turns":["No water since yesterday; streetlight not working for three days"],"expected":[{"category":"water","location":null,"time_reference":"Yesterday"},{"category":"streetlight","location":null,"time_reference":"Three Days"}]},
+ {"id":"S2","synthetic":true,"name":"House correction","turns":["House 42, sorry not 42, house 24"],"expected":[{"category":"unknown","location":"House 24","time_reference":null}]},
+ {"id":"S3","synthetic":true,"name":"Kannada-English correction","turns":["Streetlight not working: main road alla, second cross alli"],"expected":[{"category":"streetlight","location":"Second Cross","time_reference":null}]},
+ {"id":"S4","synthetic":true,"name":"Correction scope","turns":["Drainage blocked near school and no water in building; water started Monday, not Sunday"],"expected":[{"category":"drainage","location":"School","time_reference":null},{"category":"water","location":"Building","time_reference":"Monday"}]},
+ {"id":"S5","synthetic":true,"name":"Interrupted location","turns":["Garbage collection complaint near apartment, the location is..."],"expected":[{"category":"garbage","location":null,"time_reference":null}]}
+]

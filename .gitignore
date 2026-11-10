@@ -1,0 +1,17 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+work/
+*.sqlite3*
+.env.*
+!.env.example
+*.db
+*.db-*
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.aac
+*.m4a
+*.webm

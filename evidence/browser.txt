@@ -1,0 +1,1 @@
+PASS: multi-issue; missing-field gate; scoped clarification; explicit confirmation; reload continuity; manual edit revocation; mobile overflow; no JS errors. No live STT calls.

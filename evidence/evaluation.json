@@ -1,0 +1,165 @@
+{
+  "synthetic": true,
+  "metric": "Exact match of ordered category/location/time records on five hand-authored synthetic scenarios. No STT measurement.",
+  "baseline_definition": "One record; first category, first location, first time; no corrections or session state.",
+  "engine_passed": 5,
+  "baseline_passed": 0,
+  "total": 5,
+  "scenarios": [
+    {
+      "id": "S1",
+      "name": "Two services",
+      "expected": [
+        {
+          "category": "water",
+          "location": null,
+          "time_reference": "Yesterday"
+        },
+        {
+          "category": "streetlight",
+          "location": null,
+          "time_reference": "Three Days"
+        }
+      ],
+      "engine": [
+        {
+          "category": "water",
+          "location": null,
+          "time_reference": "Yesterday"
+        },
+        {
+          "category": "streetlight",
+          "location": null,
+          "time_reference": "Three Days"
+        }
+      ],
+      "baseline": [
+        {
+          "category": "water",
+          "location": null,
+          "time_reference": "Yesterday"
+        }
+      ],
+      "engine_pass": true,
+      "baseline_pass": false
+    },
+    {
+      "id": "S2",
+      "name": "House correction",
+      "expected": [
+        {
+          "category": "unknown",
+          "location": "House 24",
+          "time_reference": null
+        }
+      ],
+      "engine": [
+        {
+          "category": "unknown",
+          "location": "House 24",
+          "time_reference": null
+        }
+      ],
+      "baseline": [
+        {
+          "category": "unknown",
+          "location": "House 42",
+          "time_reference": null
+        }
+      ],
+      "engine_pass": true,
+      "baseline_pass": false
+    },
+    {
+      "id": "S3",
+      "name": "Kannada-English correction",
+      "expected": [
+        {
+          "category": "streetlight",
+          "location": "Second Cross",
+          "time_reference": null
+        }
+      ],
+      "engine": [
+        {
+          "category": "streetlight",
+          "location": "Second Cross",
+          "time_reference": null
+        }
+      ],
+      "baseline": [
+        {
+          "category": "streetlight",
+          "location": "Main Road",
+          "time_reference": null
+        }
+      ],
+      "engine_pass": true,
+      "baseline_pass": false
+    },
+    {
+      "id": "S4",
+      "name": "Correction scope",
+      "expected": [
+        {
+          "category": "drainage",
+          "location": "School",
+          "time_reference": null
+        },
+        {
+          "category": "water",
+          "location": "Building",
+          "time_reference": "Monday"
+        }
+      ],
+      "engine": [
+        {
+          "category": "drainage",
+          "location": "School",
+          "time_reference": null
+        },
+        {
+          "category": "water",
+          "location": "Building",
+          "time_reference": "Monday"
+        }
+      ],
+      "baseline": [
+        {
+          "category": "drainage",
+          "location": "School",
+          "time_reference": "Monday"
+        }
+      ],
+      "engine_pass": true,
+      "baseline_pass": false
+    },
+    {
+      "id": "S5",
+      "name": "Interrupted location",
+      "expected": [
+        {
+          "category": "garbage",
+          "location": null,
+          "time_reference": null
+        }
+      ],
+      "engine": [
+        {
+          "category": "garbage",
+          "location": null,
+          "time_reference": null
+        }
+      ],
+      "baseline": [
+        {
+          "category": "garbage",
+          "location": "Apartment",
+          "time_reference": null
+        }
+      ],
+      "engine_pass": true,
+      "baseline_pass": false
+    }
+  ]
+}
