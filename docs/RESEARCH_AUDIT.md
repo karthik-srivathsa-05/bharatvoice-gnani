@@ -1,6 +1,6 @@
 # BharatVoice technical research audit
 
-**Review draft — 10 November 2026 (IST).** Audited repository: `karthik-srivathsa-05/bharatvoice-gnani`, commit `7f786412523a232c9c39654c9184d4c7fda65290`. This audit changes no application code or tests. Recommendations are future work, not implemented features. Related documents: [prior art](PRIOR_ART.md), [proposal](RESEARCH_PROPOSAL.md).
+**Initial audit: 10 November 2026; methodology revision: 11 November 2026 (IST).** Audited repository: `karthik-srivathsa-05/bharatvoice-gnani`, commit `7f786412523a232c9c39654c9184d4c7fda65290`. This audit changes no application code or tests. Recommendations are future work, not implemented features. Related documents: [prior art](PRIOR_ART.md), [proposal](RESEARCH_PROPOSAL.md), [pinned gap matrix](PRIOR_ART_GAP_MATRIX.md), [executable counterexamples](COUNTEREXAMPLE_SPEC.md).
 
 ## 1. Executive finding
 
@@ -10,7 +10,7 @@ The 80-test suite passes, but targeted audit probes reproduce stale confirmation
 
 ## 2. Method and evidence boundaries
 
-**Verified this review:** read `app/{normalization,engine,store,stt,main,evaluation}.py`, static UI behavior in source, fixtures, pytest and browser-smoke source, README and validation notes; reran the complete existing pytest suite and evaluation script; executed isolated engine and FastAPI TestClient probes with temporary databases. Scratch scripts/results are under ignored `work/research/`, not proposed repository changes.
+**Reproduced in the initial 10 November audit:** read `app/{normalization,engine,store,stt,main,evaluation}.py`, static UI behavior in source, fixtures, pytest and browser-smoke source, README and validation notes; reran the complete existing pytest suite and evaluation script; executed isolated engine and FastAPI TestClient probes with temporary databases. Scratch scripts/results are under ignored `work/research/`, not proposed repository changes.
 
 Commands from repository root, using the existing isolated environment:
 
@@ -19,7 +19,7 @@ PYTHONDONTWRITEBYTECODE=1 work/gnani-live/venv/bin/python -m pytest -q -p no:cac
 work/gnani-live/venv/bin/python evaluate.py
 ```
 
-Result: **80 passed, one Starlette/httpx deprecation warning**. Evaluation: engine **5/5**, simple baseline **0/5** on the five known synthetic scenarios. No new paid Gnani calls, browser run, throughput benchmark, process-kill experiment, or penetration test was performed in this review.
+Result: **80 passed, one Starlette/httpx deprecation warning**. Evaluation: engine **5/5**, simple baseline **0/5** on the five known synthetic scenarios. No paid Gnani calls, browser run, throughput benchmark, process-kill experiment, or penetration test was performed in that audit. The 11 November documentation revision separately reran the embedded F1–F9 API reproducer; it did not rerun the complete suite or evaluate a new protocol.
 
 **Historical execution evidence:** `docs/LIVE_NORMALIZATION_VALIDATION.md` and this session record one retained Flite clip rerun through the existing adapter, HTTP 200, model `prisma-v3.0`, request `ad7386c0-d1de-4900-9033-b32dc89069d2`; its actual transcript yields water / House 24 / Monday with an address revision. This establishes one synthetic English audio path, not a population-level STT result or independent replication.
 
@@ -118,4 +118,12 @@ Weaknesses:
 
 **P2, commercial prerequisites:** identity/tenant controls, privacy and retention, resource limits, observability, dependency pinning, crash/load tests and downstream reconciliation. Product UI expansion should wait.
 
-The research opportunity is a narrowly specified and independently evaluated correction-to-confirmation boundary, not another collection of address regexes. Publication and novelty assessment are in the companion documents. All three documents remain review drafts; commit/push awaits the user's review.
+The research opportunity is a narrowly specified and independently evaluated correction-to-confirmation boundary, not another collection of address regexes. Publication and novelty assessment are in the companion documents. External review provisionally approved the direction, with methodological revisions required before implementation. The five research documents may be committed to `research/review-drafts`; the application remains unchanged.
+
+## 9. Revision: semantic versus observable failures
+
+The proposed monitor can constrain only operations and consent signals actually delivered to it. It cannot guarantee the latest actual user intent from an ASR transcript, nor establish semantic truth from a valid evidence span. Independent annotated intent is an uncertain evaluation reference, not a monitor input. Conditional version-bound approval and at-most-one simulated sink effect are observable protocol properties, not a proof of semantically correct action. Trusted actor identity, event ordering/delivery, canonicalization, atomic gating and sink deduplication remain assumptions, absent from the present app.
+
+F1 exposes semantic stale approval even though the current parser emits no repair. A monitor receiving the same omission may miss it too. F2 is a resolution-policy failure; F3 is scope ambiguity; F4/F5 are normalization/identifier errors; F6 is conservative incompleteness; F7 is ambiguous issue identity; F8 is partial interpretation; F9 is a false semantic issue. These are not nine equivalent protocol violations. Proposed policy responses are defined separately from reproduced state in `COUNTEREXAMPLE_SPEC.md`. No action was committed: there is no action route.
+
+All nine current-API outcomes and persisted-state checks in that document were reproduced on 11 November, using legitimate review actions rather than direct boolean mutation. No normative future-policy assertion was run. The earlier 80-pass suite and live Prisma result remain dated historical evidence. A competent B3 receives the same proposals/repair flags and can retain the same obligations; proving advantage over the present prototype alone would not establish research novelty.
